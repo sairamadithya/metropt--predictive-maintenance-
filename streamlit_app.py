@@ -162,3 +162,9 @@ if file is not None:
     st.subheader('LIME Explanations for GPS Quality')
     components.html(exp_g.as_html(), height=1000)
 
+st.write('Developed by Sairam.V.A And Pratik Jadhav')
+st.write(' ')
+st.write('https://linktr.ee/sairamadithya')
+st.write(' ')
+st.write('https://github.com/pratik0502')
+
