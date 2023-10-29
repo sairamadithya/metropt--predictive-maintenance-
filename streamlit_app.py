@@ -155,7 +155,10 @@ if file is not None:
     exp_f = explainer_f.explain_instance(data.values[j], f,num_samples=100,num_features=24)
     exp_l = explainer_l.explain_instance(data.values[j], l,num_samples=100,num_features=24)
     exp_g = explainer_g.explain_instance(data.values[j], g,num_samples=100,num_features=24)
+    st.subheader('LIME Explanations for Fault type')
     components.html(exp_f.as_html(), height=1000)
+    st.subheader('LIME Explanations for Fault location')
     components.html(exp_l.as_html(), height=1000)
+    st.subheader('LIME Explanations for GPS Quality')
     components.html(exp_g.as_html(), height=1000)
 
