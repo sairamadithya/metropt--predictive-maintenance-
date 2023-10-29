@@ -20,7 +20,7 @@ html_temp = """
   </div>
   """ 
 st.markdown(html_temp,unsafe_allow_html=True)
-model=tf.keras.models.load_model(r"C:\Users\sairam\Downloads\metropt multitask ann model-1.h5")
+model=tf.keras.models.load_model(r"metropt multitask ann model-1.h5")
 file=st.file_uploader('upload the sensor data file',type=['csv','xlsx'])
 if file is not None:
     data=pd.read_csv(file)
